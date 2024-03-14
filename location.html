@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Booking Form</title>
+    <link rel="stylesheet" href="styless.css">  
+</head>
+<body bgcolor="grey">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="car.html">Cars</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <form id="car-booking-form">
+        <label for="pickup-location">Pick-up Location:</label>
+        <input type="text" id="pickup-location" name="Ganze" required>
+        <br>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="Kilifi" required>
+        <br>
+        <button type="submit">Request Car</button>
+      </form>
+
+      <script>
+        document.getElementById('car-booking-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent default form submission
+      
+          // Access form data
+          const pickupLocation = document.getElementById('pickup-location').value;
+          const destination = document.getElementById('destination').value;
+      
+          // **Interaction with car booking service:**
+          // This part requires integration with the specific car booking service's API.
+          // You'll need to make an API call using libraries like Fetch API or Axios.
+          // 
+          // Replace the following with actual API call logic
+          console.log("Booking a car from", pickupLocation, "to", destination);
+          // ... Perform API call to car booking service ...
+      
+          // Handle successful booking or error messages
+        });
+      </script>
+      
+      

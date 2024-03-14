@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Booking Form</title>
+    <link rel="stylesheet" href="styless.css">
+    
+</head>
+<body style="background:url(img/maksim.png)">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="car.html">Cars</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <form action="submit_booking.php" method="post">
+        <center><h3>Car Booking Form</h3></center>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="Car">Car:</label>
+        <select id="Car" name="Car">
+            <option value="Probox-KDG 002F">Probox-KDG 002F</option>
+            <option value="Nissan nv200-KDG 002F">Nissan nv200-KDG 002F</option>
+            <option value="ProBox-KCF 320N">ProBox-KCF 320N</option>
+            <option value="Noarh-KCF 320N">Noarh-KCF 320N</option>
+        </select>
+        
+        <label for="pickup_date">Pickup Date and Time:</label>
+        <input type="datetime-local" id="pickup_date" name="pickup_date" required>
+        <br>
+        
+        <label for="dropoff_date">Drop-off Date and Time:</label>
+        <input type="datetime-local" id="dropoff_date" name="dropoff_date" required>
+        <br>
+
+        <label for="Roote">Roote:</label>
+        <select id="Roote" name="Roote">
+            <option value="Ganze-kilifi">Ganze-kilifi</option>
+            <option value="Kilifi-Ganze">Kilifi-Ganze</option>
+            <option value="Kilifi-Bamb">Kilifi-Bamba</option>
+            <option value="Ganze-Bamba">Ganze-Bamba</option>
+        </select>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+<br>
+    <footer>
+        &copy; 2024 Msafiri app<br>Alrights Are Reserved
+    </footer>
+</body>
+</html>
